@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="header">
+    <a href="#" class="logo">&lt;/&gt;</a>
+
+    <nav class="nav">
+        <a href="#works" data-i18n="navWorks">Роботи</a>
+        <a href="#services" data-i18n="navServices">Послуги</a>
+        <a href="#prices" data-i18n="navPrices">Ціни</a>
+        <a href="#contacts" data-i18n="navContacts">Контакти</a>
+    </nav>
+
+    <div class="lang">
+        <button onclick="setLang('uk')">UK</button>
+        <button onclick="setLang('pl')">PL</button>
+        <button onclick="setLang('ru')">RU</button>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="label" data-i18n="heroLabel">WEB DEVELOPMENT</span>
+
+        <h1 data-i18n="heroTitle">
+            Створюю сучасні сайти для бізнесу
+        </h1>
+
+        <p data-i18n="heroText">
+            Лендинги, корпоративні сайти та інтернет-магазини з адаптацією під мобільні пристрої.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#works" class="btn primary" data-i18n="heroBtn1">Переглянути роботи</a>
+            <a href="#contacts" class="btn secondary" data-i18n="heroBtn2">Обговорити проєкт</a>
+        </div>
+    </div>
+
+    <div class="hero-preview">
+        <div class="preview-card big">
+            <img src="images/urbanwear.jpg" alt="UrbanWear">
+        </div>
+
+        <div class="preview-row">
+            <div class="preview-card small">
+                <img src="images/autofix.jpg" alt="AutoFix">
+            </div>
+            <div class="preview-card small">
+                <img src="images/granit.jpg" alt="Granit">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section intro">
+    <span class="label" data-i18n="aboutLabel">ПРО МЕНЕ</span>
+    <h2 data-i18n="aboutTitle">
+        Не просто роблю сайти — допомагаю бізнесу виглядати професійно онлайн.
+    </h2>
+    <p data-i18n="aboutText">
+        Розробляю швидкі, адаптивні та зручні сайти без конструкторів. Від першого екрану до запуску.
+    </p>
+</section>
+
+<section class="section works" id="works">
+    <div class="section-head">
+        <span class="label" data-i18n="worksLabel">МОЇ РОБОТИ</span>
+        <h2 data-i18n="worksTitle">Вибрані проєкти</h2>
+    </div>
+
+    <div class="work-grid">
+
+        <article class="work-card large">
+            <img src="images/urbanwear.jpg" alt="UrbanWear">
+            <div class="work-info">
+                <span>01</span>
+                <h3>UrbanWear</h3>
+                <p data-i18n="urbanText">
+                    Інтернет-магазин одягу з каталогом, кошиком, оформленням замовлень, адмін-панеллю та 3 мовами.
+                </p>
+                <div class="tags">
+                    <span>Flask</span>
+                    <span>SQLite</span>
+                    <span>Shop</span>
+                    <span>3 Languages</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="work-card">
+            <img src="images/autofix.jpg" alt="AutoFix">
+            <div class="work-info">
+                <span>02</span>
+                <h3>AutoFix Service</h3>
+                <p data-i18n="autofixText">
+                    Сучасний лендинг для автосервісу з формою запису, блоками послуг, цін та мультимовністю.
+                </p>
+                <div class="tags">
+                    <span>Landing</span>
+                    <span>UI/UX</span>
+                    <span>Responsive</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="work-card">
+            <img src="images/granit.jpg" alt="Granit Kostopil">
+            <div class="work-info">
+                <span>03</span>
+                <h3>Граніт Костопіль</h3>
+                <p data-i18n="granitText">
+                    Корпоративний сайт для виробника гранітних виробів з каталогом робіт, заявками та адмін-панеллю.
+                </p>
+                <div class="tags">
+                    <span>Business</span>
+                    <span>Catalog</span>
+                    <span>Admin</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="section services" id="services">
+    <div class="section-head">
+        <span class="label" data-i18n="servicesLabel">ПОСЛУГИ</span>
+        <h2 data-i18n="servicesTitle">Що я можу зробити</h2>
+    </div>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <h3 data-i18n="service1Title">Landing Page</h3>
+            <p data-i18n="service1Text">Односторінковий сайт для реклами послуг, товару або запуску проєкту.</p>
+        </div>
+
+        <div class="service-card">
+            <h3 data-i18n="service2Title">Сайт компанії</h3>
+            <p data-i18n="service2Text">Корпоративний сайт для бізнесу з інформацією про послуги, компанію та контакти.</p>
+        </div>
+
+        <div class="service-card">
+            <h3 data-i18n="service3Title">Інтернет-магазин</h3>
+            <p data-i18n="service3Text">Каталог товарів, кошик, оформлення замовлень та адміністративна панель.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section prices" id="prices">
+    <div class="section-head">
+        <span class="label" data-i18n="pricesLabel">ЦІНИ</span>
+        <h2 data-i18n="pricesTitle">Орієнтовна вартість</h2>
+    </div>
+
+    <div class="price-grid">
+
+        <div class="price-card">
+            <h3 data-i18n="price1Title">Landing Page</h3>
+            <strong>від 150 €</strong>
+            <p data-i18n="price1Text">Для реклами послуги або одного продукту.</p>
+        </div>
+
+        <div class="price-card featured">
+            <h3 data-i18n="price2Title">Сайт компанії</h3>
+            <strong>від 350 €</strong>
+            <p data-i18n="price2Text">Для бізнесу, послуг, локальних компаній та портфоліо.</p>
+        </div>
+
+        <div class="price-card">
+            <h3 data-i18n="price3Title">Інтернет-магазин</h3>
+            <strong>від 500 €</strong>
+            <p data-i18n="price3Text">Каталог товарів, кошик, замовлення та адмін-панель.</p>
+        </div>
+
+    </div>
+
+    <p class="price-note" data-i18n="priceNote">
+        Остаточна ціна залежить від складності проєкту.
+    </p>
+</section>
+
+<section class="section why">
+    <div class="section-head">
+        <span class="label" data-i18n="whyLabel">ПЕРЕВАГИ</span>
+        <h2 data-i18n="whyTitle">Чому зі мною зручно працювати</h2>
+    </div>
+
+    <div class="why-grid">
+        <div>
+            <h3 data-i18n="why1Title">Адаптивність</h3>
+            <p data-i18n="why1Text">Сайт коректно виглядає на телефоні, планшеті та комп’ютері.</p>
+        </div>
+
+        <div>
+            <h3 data-i18n="why2Title">Чистий код</h3>
+            <p data-i18n="why2Text">Без конструкторів, зайвих блоків та випадкових шаблонів.</p>
+        </div>
+
+        <div>
+            <h3 data-i18n="why3Title">SEO-підготовка</h3>
+            <p data-i18n="why3Text">Базова структура для пошукових систем.</p>
+        </div>
+
+        <div>
+            <h3 data-i18n="why4Title">Підтримка</h3>
+            <p data-i18n="why4Text">Допомагаю після запуску сайту.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contacts">
+    <h2 data-i18n="contactTitle">Готові обговорити ваш сайт?</h2>
+    <p data-i18n="contactText">Напишіть мені — обговоримо ідею, терміни та вартість.</p>
+
+    <div class="contact-buttons">
+        <a href="#" class="btn primary">Telegram</a>
+        <a href="mailto:your@email.com" class="btn secondary">Email</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Web Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
